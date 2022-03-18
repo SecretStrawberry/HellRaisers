@@ -1,0 +1,24 @@
+@import "../../utils/colors.scss";
+
+.Home {
+  padding: 2rem 4rem;
+  background-image: linear-gradient(
+      to right,
+      rgba($blueDark, 0.96),
+      rgba($purpleDark, 0.96),
+      rgba($blueDark, 0.96)
+    ),
+    url("../../images/background.jpg");
+
+  background-position: center;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+.Panels {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
