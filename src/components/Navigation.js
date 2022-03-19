@@ -1,12 +1,14 @@
 import React from "react";
+import "../styles/components/Navigation.scss";
 
 function Navigation() {
   return (
-    <nav>
+    <nav className="Nav">
+      <button>X</button>
       <ul>
-        <li>home</li>
-        <li>about</li>
-        <li>Blaa</li>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>BLAA</li>
       </ul>
     </nav>
   );
