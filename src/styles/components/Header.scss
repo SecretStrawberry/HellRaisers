@@ -25,13 +25,4 @@
       font-family: "Special Elite", cursive;
     }
   }
-
-  &_NavigationButton {
-    color: $white;
-    font-size: 4rem;
-    transition: all 0.2s;
-    &:hover {
-      color: $green;
-    }
-  }
 }
