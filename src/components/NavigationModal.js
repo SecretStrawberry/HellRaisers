@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../styles/components/NavigationModal.scss";
 import { CgMenuGridO, CgClose } from "react-icons/cg";
+import "../styles/components/NavigationModal.scss";
 
 function NavigationModal({ children }) {
   const [shouldShow, setShouldShow] = useState(false);

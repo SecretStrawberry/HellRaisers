@@ -1,63 +1,63 @@
-@import "../../utils/colors.scss";
+// @import "../../utils/colors.scss";
 
-.Nav {
-  position: fixed;
-  top: 7rem;
-  right: 5rem;
+// .Nav {
+//   position: fixed;
+//   top: 7rem;
+//   right: 5rem;
 
-  padding: 1rem 2rem;
+//   padding: 1rem 2rem;
 
-  color: $white;
-  box-shadow: inset 0 0 1rem $green;
-  background-color: rgba($greenDark, 1);
-  transition: all 0.2s;
-  & > ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+//   color: $white;
+//   box-shadow: inset 0 0 1rem $green;
+//   background-color: rgba($greenDark, 1);
+//   transition: all 0.2s;
+//   & > ul {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
 
-    height: 50vh;
+//     height: 50vh;
 
-    list-style: none;
-    padding: 1rem 3rem;
-    font-size: 1.6rem;
+//     list-style: none;
+//     padding: 1rem 3rem;
+//     font-size: 1.6rem;
 
-    & > li {
-      position: relative;
-      padding: 1rem 2rem;
-      box-shadow: inset 0 0 1rem $red;
-      transition: all 0.3s;
+//     & > li {
+//       position: relative;
+//       padding: 1rem 2rem;
+//       box-shadow: inset 0 0 1rem $red;
+//       transition: all 0.3s;
 
-      text-align: center;
+//       text-align: center;
 
-      &::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
+//       &::after {
+//         position: absolute;
+//         content: "";
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//       }
 
-      &:hover {
-        box-shadow: inset 0 0 5rem $red;
-        transform: translateY(-2px) translateX(2px);
-        color: $gold;
+//       &:hover {
+//         box-shadow: inset 0 0 5rem $red;
+//         transform: translateY(-2px) translateX(2px);
+//         color: $gold;
 
-        &::after {
-          box-shadow: 1px 1px 1px $green;
-        }
-      }
+//         &::after {
+//           box-shadow: 1px 1px 1px $green;
+//         }
+//       }
 
-      &:active {
-        transform: translateY(0) translateX(0);
-        box-shadow: inset 0 0 1rem $red;
-        color: $white;
+//       &:active {
+//         transform: translateY(0) translateX(0);
+//         box-shadow: inset 0 0 1rem $red;
+//         color: $white;
 
-        &::after {
-          box-shadow: none;
-        }
-      }
-    }
-  }
-}
+//         &::after {
+//           box-shadow: none;
+//         }
+//       }
+//     }
+//   }
+// }
