@@ -14,7 +14,10 @@ function NavigationModal({ children }) {
       {shouldShow && (
         <div className="Background" onClick={() => setShouldShow(false)}>
           <nav className="Nav" onClick={(e) => e.stopPropagation()}>
-            <CgClose onClick={() => setShouldShow(false)} />
+            <CgClose
+              className="CloseButton"
+              onClick={() => setShouldShow(false)}
+            />
             {children}
           </nav>
         </div>
