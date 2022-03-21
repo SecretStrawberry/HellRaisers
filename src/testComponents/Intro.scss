@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+@import "../utils/colors.scss";
+
+.Intro_Container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+
+  color: $white;
+  text-align: center;
+
+  background-image: linear-gradient(
+    to right,
+    rgba($blueDark, 0.96),
+    rgba($purpleDark, 0.96),
+    rgba($blueDark, 0.96)
+  );
+
+  overflow: hidden;
+
+  animation: moveUp 1s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.Left,
+.Right {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-shadow: 0 0 5rem $red;
+}
+
+.Left {
+  background-image: linear-gradient(
+    to Right,
+    rgba($blueDark, 1),
+    rgba($purpleDark, 1)
+  );
+
+  animation: moveLeft 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+
+  & > h2 {
+    font-size: 10rem;
+    font-family: "Amatic SC", cursive;
+    color: $red;
+  }
+}
+
+.Right {
+  text-align: left;
+
+  background-image: linear-gradient(
+    to Right,
+    rgba($purpleDark, 1),
+    rgba($blueDark, 1)
+  );
+
+  animation: moveRight 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+
+  & > h2 {
+    font-size: 4rem;
+    font-family: "Special Elite", cursive;
+    color: $gold;
+  }
+}
+
+.Rotating {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 30rem;
+  height: 30rem;
+
+  z-index: 2;
+}
+
+.Spin {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+
+  transform-origin: center center;
+
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+
+  background-image: radial-gradient(
+    rgba($red, 1),
+    rgba($blueDark, 1),
+    rgba($red, 1)
+  );
+
+  animation: spin 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveLeft {
+  0% {
+    left: 0;
+  }
+  90% {
+    left: -90%;
+  }
+  100% {
+    left: -100%;
+    display: none;
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    left: 0;
+  }
+  90% {
+    left: 90%;
+  }
+  100% {
+    left: 100%;
+    display: none;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  25% {
+    transform: rotate(-160deg) scale(0.3);
+  }
+
+  40% {
+    transform: rotate(360deg) scale(0.5);
+  }
+
+  50% {
+    transform: rotate(-180deg) scale(0.3);
+  }
+
+  80% {
+    transform: rotate(180deg) scale(0.3);
+  }
+
+  90% {
+    transform: rotate(360deg) scale(5);
+  }
+
+  99% {
+    transform: rotate(-360deg) scale(0.3);
+  }
+
+  100% {
+    transform: rotate(-360deg) scale(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -100%;
+  }
+}

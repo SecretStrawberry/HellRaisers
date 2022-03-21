@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/components/NavigationModal.scss";
 import { CgMenuGridO, CgClose } from "react-icons/cg";
 
-function Modal({ children }) {
+function NavigationModal({ children }) {
   const [shouldShow, setShouldShow] = useState(false);
   return (
     <>
@@ -23,4 +23,4 @@ function Modal({ children }) {
   );
 }
 
-export default Modal;
+export default NavigationModal;
