@@ -20,3 +20,8 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
+
+::selection {
+  color: #1b1919;
+  background-color: #116530;
+}
