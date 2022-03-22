@@ -11,8 +11,27 @@
     url("../../images/background.jpg");
 
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.Title {
+  text-align: center;
+  & > h1 {
+    margin-bottom: 2rem;
+    font-family: "Amatic SC", cursive;
+    font-size: 9rem;
+    color: $gold;
+    text-shadow: 0 0 5rem $red;
+  }
+  & > h2 {
+    color: $red;
+    font-size: 4rem;
+    letter-spacing: 0.9rem;
+    text-shadow: 0 0 5rem $red;
+    font-family: "Special Elite", cursive;
+  }
 }
 
 .Panels {

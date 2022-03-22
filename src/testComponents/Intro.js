@@ -8,9 +8,9 @@ function Intro() {
       <div className="Left">
         <h2>GODS</h2>
       </div>
-      <div className="Rotating">
+      {/* <div className="Rotating">
         <div className="Spin"></div>
-      </div>
+      </div> */}
       <div className="Right">
         <h2>HellRaisers</h2>
       </div>

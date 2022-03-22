@@ -10,10 +10,7 @@ function Header() {
     <>
       <header className="Header">
         <Logo />
-        <div className="Header_Title">
-          <h1>GODS</h1>
-          <h2>HellRaisers</h2>
-        </div>
+
         <NavigationModal>
           <NavigationItems />
         </NavigationModal>
