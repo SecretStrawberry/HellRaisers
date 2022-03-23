@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { CgMenuGridO, CgClose } from "react-icons/cg";
+import { CgMenuGridO } from "react-icons/cg";
 import "../styles/components/NavigationModal.scss";
+
+// CgClose THE X BUTTON FROM MENU
 
 function NavigationModal({ children }) {
   const [shouldShow, setShouldShow] = useState(false);
@@ -14,10 +16,10 @@ function NavigationModal({ children }) {
       {shouldShow && (
         <div className="Background" onClick={() => setShouldShow(false)}>
           <nav className="Nav" onClick={(e) => e.stopPropagation()}>
-            <CgClose
+            {/* <CgClose
               className="CloseButton"
               onClick={() => setShouldShow(false)}
-            />
+            /> */}
             {children}
           </nav>
         </div>

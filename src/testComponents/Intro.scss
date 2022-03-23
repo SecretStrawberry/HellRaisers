@@ -28,7 +28,7 @@
 
   animation: moveUp 1s ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 .Left,
@@ -55,7 +55,7 @@
 
   animation: moveLeft 5s ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 0.22s;
+  animation-delay: 1s;
 
   & > h2 {
     font-size: 10rem;
@@ -75,7 +75,7 @@
 
   animation: moveRight 5s ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 0.2s;
+  animation-delay: 1s;
 
   & > h2 {
     font-size: 4rem;
