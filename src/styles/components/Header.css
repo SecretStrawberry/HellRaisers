@@ -1,24 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
-@import "../../utils/colors.scss";
-
 .Header {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
   width: 100%;
   left: 50%;
   top: 0;
-  transform: translate(-50%, 0);
-
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   padding: 2rem 4rem;
-
-  background-color: $purpleDark;
-
-  &_Left {
-    display: flex;
-    align-items: center;
-    width: 50%;
-  }
+  background-color: #200f21;
 }
+
+.Header_Left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+/*# sourceMappingURL=Header.css.map */

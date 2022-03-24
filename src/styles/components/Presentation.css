@@ -1,0 +1,16 @@
+.Presentation {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.Presentation > h3 {
+  margin-bottom: 1rem;
+}
+
+.Presentation > p {
+  line-height: 3.2rem;
+}
+/*# sourceMappingURL=Presentation.css.map */

@@ -1,0 +1,100 @@
+.Background {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.NavigationButton {
+  color: #fff;
+  font-size: 4rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: transparent;
+}
+
+.NavigationButton:hover {
+  color: #116530;
+}
+
+.Nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 1rem;
+  right: 10rem;
+  width: 20%;
+  color: #f6d860;
+  text-align: left;
+  font-size: 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.Nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+}
+
+.Nav > ul > li {
+  position: relative;
+  padding: 1rem 2rem;
+  -webkit-box-shadow: inset 0 0 1rem #116530;
+          box-shadow: inset 0 0 1rem #116530;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.Nav > ul > li::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Nav > ul > li:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(-2px) translateX(2px);
+          transform: translateY(-2px) translateX(2px);
+  color: #f6d860;
+}
+
+.Nav > ul > li:hover::after {
+  -webkit-box-shadow: 0 0 4rem #116530;
+          box-shadow: 0 0 4rem #116530;
+}
+
+.Nav > ul > li:active {
+  -webkit-transform: translateY(0) translateX(0);
+          transform: translateY(0) translateX(0);
+  -webkit-box-shadow: inset 0 0 1rem #116530;
+          box-shadow: inset 0 0 1rem #116530;
+  color: #fff;
+}
+
+.Nav > ul > li:active::after {
+  -webkit-box-shadow: 0 0 0.5rem #116530;
+          box-shadow: 0 0 0.5rem #116530;
+  border: none;
+}
+
+.CloseButton {
+  margin-top: 1rem;
+  color: #da1212;
+}
+/*# sourceMappingURL=NavigationModal.css.map */

@@ -1,0 +1,87 @@
+@import "../../utils/colors.scss";
+
+.Navigation {
+  font-size: 2rem;
+  width: 50%;
+
+  & > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    & > a {
+      text-decoration: none;
+
+      & > li {
+        position: relative;
+
+        text-transform: uppercase;
+        font-weight: 800;
+
+        background-color: $white;
+
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+        overflow: hidden;
+
+        &::before {
+          position: absolute;
+          content: attr(data-title);
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+
+          background-color: $red;
+
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+
+          transition: all 0.5s;
+        }
+        //FIXME: The animation of after-bar moving under the title- stops when the mouse gets out of the li element
+        // &::after {
+        //   position: absolute;
+        //   content: "";
+        //   bottom: 0;
+        //   left: 0;
+        //   width: 0;
+        //   height: 2px;
+        //   background-color: $red;
+        //   transition: all 0.5s;
+        // }
+
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+          // &::after {
+          //   animation: moveBorder 1s;
+          //   animation-fill-mode: forwards;
+          // }
+        }
+      }
+    }
+  }
+}
+
+@keyframes moveBorder {
+  0% {
+    width: 40%;
+  }
+
+  25% {
+    width: 100%;
+  }
+
+  99% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+    transform: translateX(20rem);
+  }
+}

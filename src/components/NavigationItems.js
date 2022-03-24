@@ -3,9 +3,16 @@ import React from "react";
 function NavigationItems() {
   return (
     <ul>
-      <li>HOME</li>
-      <li>ABOUT</li>
-      <li>BLAA</li>
+      <a href="#">
+        <li data-title="home">home</li>
+      </a>
+      <a href="#">
+        <li data-title="hellraisers">hellraisers</li>
+      </a>
+
+      <a href="#">
+        <li data-title="team">team</li>
+      </a>
     </ul>
   );
 }

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EAEnB,OAAO,EAAE,SAAS;EAElB,UAAU,EAAE,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,IAAI,CCHpB,OAAO;EDKb,KAAK,EAAE,GAAG;EACV,KAAK,ECTC,IAAI;EDUV,SAAS,EAAE,MAAM;CAMlB;;AAlBD,AAcE,UAdQ,GAcJ,CAAC,CAAC;EACJ,OAAO,EAAE,SAAS;EAClB,WAAW,EAAE,IAAI;CAClB",
+    "sources": [
+        "PanelLeft.scss",
+        "../../utils/colors.scss"
+    ],
+    "names": [],
+    "file": "PanelLeft.css"
+}

@@ -1,7 +1,8 @@
 import React from "react";
-import NavigationItems from "./NavigationItems";
-import NavigationModal from "./NavigationModal";
+
 import Logo from "./Logo";
+import Navigation from "./Navigation";
+import NavigationItems from "./NavigationItems";
 
 import "../styles/components/Header.scss";
 
@@ -9,11 +10,13 @@ function Header() {
   return (
     <>
       <header className="Header">
-        <Logo />
-
-        <NavigationModal>
-          <NavigationItems />
-        </NavigationModal>
+        <div className="Header_Left">
+          <Logo />
+          <Navigation>
+            <NavigationItems />
+          </Navigation>
+        </div>
+        <div className="Header_Right">social</div>
       </header>
     </>
   );

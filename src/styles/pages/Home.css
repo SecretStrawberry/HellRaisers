@@ -1,0 +1,43 @@
+.Home {
+  padding: 2rem 4rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(7, 7, 57, 0.96)), color-stop(rgba(32, 15, 33, 0.96)), to(rgba(7, 7, 57, 0.96))), url("../../images/background.jpg");
+  background-image: linear-gradient(to right, rgba(7, 7, 57, 0.96), rgba(32, 15, 33, 0.96), rgba(7, 7, 57, 0.96)), url("../../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.Title {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.Title > h1 {
+  margin-bottom: 2rem;
+  font-family: "Amatic SC", cursive;
+  font-size: 9rem;
+  color: #f6d860;
+  text-shadow: 0 0 5rem #da1212;
+}
+
+.Title > h2 {
+  color: #da1212;
+  font-size: 4rem;
+  letter-spacing: 0.9rem;
+  text-shadow: 0 0 5rem #da1212;
+  font-family: "Special Elite", cursive;
+}
+
+.Panels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+/*# sourceMappingURL=Home.css.map */

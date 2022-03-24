@@ -25,6 +25,7 @@
   );
 
   overflow: hidden;
+  z-index: 3;
 
   animation: moveUp 1s ease-out;
   animation-fill-mode: forwards;

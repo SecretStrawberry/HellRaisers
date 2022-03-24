@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACZ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,KAAK;EACjB,KAAK,ECFC,IAAI;EDGV,SAAS,EAAE,MAAM;CAOlB;;AAZD,AAME,aANW,GAMP,EAAE,CAAC;EACL,aAAa,EAAE,IAAI;CACpB;;AARH,AASE,aATW,GASP,CAAC,CAAC;EACJ,WAAW,EAAE,MAAM;CACpB",
+    "sources": [
+        "Presentation.scss",
+        "../../utils/colors.scss"
+    ],
+    "names": [],
+    "file": "Presentation.css"
+}
