@@ -2,8 +2,8 @@ import React from "react";
 
 import Intro from "../testComponents/Intro";
 import Header from "../components/Header";
-import Presentation from "../components/Presentation";
-import Team from "../testComponents/Team";
+// import Presentation from "../components/Presentation";
+// import Team from "../testComponents/Team";
 // import PanelLeft from "../components/PanelLeft";
 // import PanelRight from "../components/PanelRight";
 
@@ -19,8 +19,7 @@ function Home() {
           <h1>GODS</h1>
           <h2>HellRaisers</h2>
         </div>
-        <Presentation />
-        <Team />
+
         {/* <div className="Panels">
           <PanelLeft />
           <PanelRight />
